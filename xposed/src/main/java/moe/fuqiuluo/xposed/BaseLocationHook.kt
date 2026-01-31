@@ -110,8 +110,8 @@ abstract class BaseLocationHook: BaseDivineService() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 location.isMock = true
             }
-            location.extras?.putBoolean("portal.enable", true)
-            location.extras?.putBoolean("is_mock", true)
+            location.extras?.putBoolean("portal.enable", false)
+            location.extras?.putBoolean("is_mock", false)
         }
 
         kotlin.runCatching {
